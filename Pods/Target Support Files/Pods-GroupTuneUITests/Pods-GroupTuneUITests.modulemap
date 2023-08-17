@@ -1,0 +1,6 @@
+framework module Pods_GroupTuneUITests {
+  umbrella header "Pods-GroupTuneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

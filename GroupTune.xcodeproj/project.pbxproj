@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A950345078F64646763F2D3 /* Pods_GroupTune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F47D90B0162AB16D3CCFF58 /* Pods_GroupTune.framework */; };
+		865A899460F9E97EBAF71A47 /* Pods_GroupTuneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8F95C37E48D97F831E1967 /* Pods_GroupTuneTests.framework */; };
+		A5B33A77209A9E2100A7F421 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A6E209A9E1D00A7F421 /* logo.png */; };
+		A5B33A78209A9E2100A7F421 /* QueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B33A6F209A9E1E00A7F421 /* QueueItem.swift */; };
+		A5B33A7A209A9E2100A7F421 /* logo_notag.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A71209A9E1F00A7F421 /* logo_notag.png */; };
+		A5B33A7B209A9E2100A7F421 /* LoggedIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A72209A9E1F00A7F421 /* LoggedIn.storyboard */; };
+		A5B33A7C209A9E2100A7F421 /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A73209A9E2000A7F421 /* Queue.storyboard */; };
+		A5B33A7D209A9E2100A7F421 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B33A74209A9E2000A7F421 /* Queue.swift */; };
+		A5B33A7E209A9E2100A7F421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A75209A9E2000A7F421 /* Main.storyboard */; };
+		A5B33A7F209A9E2100A7F421 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B33A76209A9E2100A7F421 /* Song.swift */; };
+		A5B33A81209A9FFA00A7F421 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A80209A9FF900A7F421 /* Search.storyboard */; };
+		A5B33A83209AA01A00A7F421 /* New Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A82209AA01A00A7F421 /* New Room.storyboard */; };
+		A5B33A85209AA03300A7F421 /* Join Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B33A84209AA03200A7F421 /* Join Room.storyboard */; };
+		A5D13E6520852C610097C462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E6420852C610097C462 /* AppDelegate.swift */; };
+		A5D13E6720852C610097C462 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E6620852C610097C462 /* MainViewController.swift */; };
+		A5D13E6D20852C610097C462 /* GroupTune.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E6B20852C610097C462 /* GroupTune.xcdatamodeld */; };
+		A5D13E6F20852C640097C462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D13E6E20852C640097C462 /* Assets.xcassets */; };
+		A5D13E7220852C640097C462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D13E7020852C640097C462 /* LaunchScreen.storyboard */; };
+		A5D13E7D20852C640097C462 /* GroupTuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E7C20852C640097C462 /* GroupTuneTests.swift */; };
+		A5D13E8820852C640097C462 /* GroupTuneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E8720852C640097C462 /* GroupTuneUITests.swift */; };
+		A5D13E9820852DA50097C462 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D13E9520852DA40097C462 /* SpotifyAudioPlayback.framework */; };
+		A5D13E9920852DA50097C462 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D13E9620852DA40097C462 /* SpotifyAuthentication.framework */; };
+		A5D13E9A20852DA50097C462 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D13E9720852DA50097C462 /* SpotifyMetadata.framework */; };
+		A5D13EA020852DFF0097C462 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D13E9F20852DFF0097C462 /* Test.m */; };
+		E945A47D5AE3B6A7CE8A1897 /* Pods_GroupTuneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC08FAED25B755BCE1496E5 /* Pods_GroupTuneUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5D13E7920852C640097C462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D13E5920852C610097C462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D13E6020852C610097C462;
+			remoteInfo = GroupTune;
+		};
+		A5D13E8420852C640097C462 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D13E5920852C610097C462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D13E6020852C610097C462;
+			remoteInfo = GroupTune;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1095F7C2311EE5B358AF4C02 /* Pods-GroupTune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTune.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTune/Pods-GroupTune.debug.xcconfig"; sourceTree = "<group>"; };
+		110C55702C1810F4E3F51317 /* Pods-GroupTuneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTuneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTuneTests/Pods-GroupTuneTests.release.xcconfig"; sourceTree = "<group>"; };
+		1885498CA9D22ABBE7259B96 /* Pods-GroupTuneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTuneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTuneUITests/Pods-GroupTuneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E8F95C37E48D97F831E1967 /* Pods_GroupTuneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupTuneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B765AA0BD4C2CBA72AC382B /* Pods-GroupTuneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTuneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTuneTests/Pods-GroupTuneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D1E486D7470BB8F17B9BADB /* Pods-GroupTune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTune.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTune/Pods-GroupTune.release.xcconfig"; sourceTree = "<group>"; };
+		4EC08FAED25B755BCE1496E5 /* Pods_GroupTuneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupTuneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CED88DEB489B3086E7440FF /* Pods-GroupTuneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTuneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTuneUITests/Pods-GroupTuneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F47D90B0162AB16D3CCFF58 /* Pods_GroupTune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupTune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B33A6E209A9E1D00A7F421 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A5B33A6F209A9E1E00A7F421 /* QueueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueItem.swift; sourceTree = "<group>"; };
+		A5B33A71209A9E1F00A7F421 /* logo_notag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_notag.png; sourceTree = "<group>"; };
+		A5B33A72209A9E1F00A7F421 /* LoggedIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoggedIn.storyboard; sourceTree = "<group>"; };
+		A5B33A73209A9E2000A7F421 /* Queue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
+		A5B33A74209A9E2000A7F421 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A5B33A75209A9E2000A7F421 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A5B33A76209A9E2100A7F421 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A5B33A80209A9FF900A7F421 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A5B33A82209AA01A00A7F421 /* New Room.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "New Room.storyboard"; sourceTree = "<group>"; };
+		A5B33A84209AA03200A7F421 /* Join Room.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Join Room.storyboard"; sourceTree = "<group>"; };
+		A5D13E6120852C610097C462 /* GroupTune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupTune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D13E6420852C610097C462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5D13E6620852C610097C462 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A5D13E6C20852C610097C462 /* GroupTune.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroupTune.xcdatamodel; sourceTree = "<group>"; };
+		A5D13E6E20852C640097C462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5D13E7120852C640097C462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5D13E7320852C640097C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D13E7820852C640097C462 /* GroupTuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupTuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D13E7C20852C640097C462 /* GroupTuneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTuneTests.swift; sourceTree = "<group>"; };
+		A5D13E7E20852C640097C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D13E8320852C640097C462 /* GroupTuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupTuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D13E8720852C640097C462 /* GroupTuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTuneUITests.swift; sourceTree = "<group>"; };
+		A5D13E8920852C640097C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D13E9520852DA40097C462 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		A5D13E9620852DA40097C462 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		A5D13E9720852DA50097C462 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		A5D13E9D20852DFE0097C462 /* GroupTune-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupTune-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5D13E9E20852DFF0097C462 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		A5D13E9F20852DFF0097C462 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5D13E5E20852C610097C462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D13E9820852DA50097C462 /* SpotifyAudioPlayback.framework in Frameworks */,
+				A5D13E9A20852DA50097C462 /* SpotifyMetadata.framework in Frameworks */,
+				A5D13E9920852DA50097C462 /* SpotifyAuthentication.framework in Frameworks */,
+				3A950345078F64646763F2D3 /* Pods_GroupTune.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E7520852C640097C462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865A899460F9E97EBAF71A47 /* Pods_GroupTuneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E8020852C640097C462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A47D5AE3B6A7CE8A1897 /* Pods_GroupTuneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A39BF596FBCD0FB097D16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F47D90B0162AB16D3CCFF58 /* Pods_GroupTune.framework */,
+				1E8F95C37E48D97F831E1967 /* Pods_GroupTuneTests.framework */,
+				4EC08FAED25B755BCE1496E5 /* Pods_GroupTuneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5D13E5820852C610097C462 = {
+			isa = PBXGroup;
+			children = (
+				A5D13E9E20852DFF0097C462 /* Test.h */,
+				A5D13E9F20852DFF0097C462 /* Test.m */,
+				A5D13E6320852C610097C462 /* GroupTune */,
+				A5D13E7B20852C640097C462 /* GroupTuneTests */,
+				A5D13E8620852C640097C462 /* GroupTuneUITests */,
+				A5D13E6220852C610097C462 /* Products */,
+				A5D13E9D20852DFE0097C462 /* GroupTune-Bridging-Header.h */,
+				E66AE8ABBDF837107711D704 /* Pods */,
+				31A39BF596FBCD0FB097D16E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5D13E6220852C610097C462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5D13E6120852C610097C462 /* GroupTune.app */,
+				A5D13E7820852C640097C462 /* GroupTuneTests.xctest */,
+				A5D13E8320852C640097C462 /* GroupTuneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5D13E6320852C610097C462 /* GroupTune */ = {
+			isa = PBXGroup;
+			children = (
+				A5D13E9520852DA40097C462 /* SpotifyAudioPlayback.framework */,
+				A5D13E9620852DA40097C462 /* SpotifyAuthentication.framework */,
+				A5D13E9720852DA50097C462 /* SpotifyMetadata.framework */,
+				A5D13E6420852C610097C462 /* AppDelegate.swift */,
+				A5B33A75209A9E2000A7F421 /* Main.storyboard */,
+				A5D13E6620852C610097C462 /* MainViewController.swift */,
+				A5B33A80209A9FF900A7F421 /* Search.storyboard */,
+				A5B33A72209A9E1F00A7F421 /* LoggedIn.storyboard */,
+				A5B33A84209AA03200A7F421 /* Join Room.storyboard */,
+				A5B33A82209AA01A00A7F421 /* New Room.storyboard */,
+				A5B33A71209A9E1F00A7F421 /* logo_notag.png */,
+				A5B33A6E209A9E1D00A7F421 /* logo.png */,
+				A5B33A73209A9E2000A7F421 /* Queue.storyboard */,
+				A5B33A74209A9E2000A7F421 /* Queue.swift */,
+				A5B33A6F209A9E1E00A7F421 /* QueueItem.swift */,
+				A5B33A76209A9E2100A7F421 /* Song.swift */,
+				A5D13E6E20852C640097C462 /* Assets.xcassets */,
+				A5D13E7020852C640097C462 /* LaunchScreen.storyboard */,
+				A5D13E7320852C640097C462 /* Info.plist */,
+				A5D13E6B20852C610097C462 /* GroupTune.xcdatamodeld */,
+			);
+			path = GroupTune;
+			sourceTree = "<group>";
+		};
+		A5D13E7B20852C640097C462 /* GroupTuneTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5D13E7C20852C640097C462 /* GroupTuneTests.swift */,
+				A5D13E7E20852C640097C462 /* Info.plist */,
+			);
+			path = GroupTuneTests;
+			sourceTree = "<group>";
+		};
+		A5D13E8620852C640097C462 /* GroupTuneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5D13E8720852C640097C462 /* GroupTuneUITests.swift */,
+				A5D13E8920852C640097C462 /* Info.plist */,
+			);
+			path = GroupTuneUITests;
+			sourceTree = "<group>";
+		};
+		E66AE8ABBDF837107711D704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1095F7C2311EE5B358AF4C02 /* Pods-GroupTune.debug.xcconfig */,
+				4D1E486D7470BB8F17B9BADB /* Pods-GroupTune.release.xcconfig */,
+				3B765AA0BD4C2CBA72AC382B /* Pods-GroupTuneTests.debug.xcconfig */,
+				110C55702C1810F4E3F51317 /* Pods-GroupTuneTests.release.xcconfig */,
+				1885498CA9D22ABBE7259B96 /* Pods-GroupTuneUITests.debug.xcconfig */,
+				8CED88DEB489B3086E7440FF /* Pods-GroupTuneUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5D13E6020852C610097C462 /* GroupTune */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D13E8C20852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTune" */;
+			buildPhases = (
+				CF891F0CB0799F30EEC730B0 /* [CP] Check Pods Manifest.lock */,
+				A5D13E5D20852C610097C462 /* Sources */,
+				A5D13E5E20852C610097C462 /* Frameworks */,
+				A5D13E5F20852C610097C462 /* Resources */,
+				7000B3B3E9D1D4BA5CB48A96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupTune;
+			productName = GroupTune;
+			productReference = A5D13E6120852C610097C462 /* GroupTune.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5D13E7720852C640097C462 /* GroupTuneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D13E8F20852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTuneTests" */;
+			buildPhases = (
+				791061CE54B3CEF79D4E9C76 /* [CP] Check Pods Manifest.lock */,
+				A5D13E7420852C640097C462 /* Sources */,
+				A5D13E7520852C640097C462 /* Frameworks */,
+				A5D13E7620852C640097C462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D13E7A20852C640097C462 /* PBXTargetDependency */,
+			);
+			name = GroupTuneTests;
+			productName = GroupTuneTests;
+			productReference = A5D13E7820852C640097C462 /* GroupTuneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5D13E8220852C640097C462 /* GroupTuneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D13E9220852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTuneUITests" */;
+			buildPhases = (
+				F4B8874B6B2A7F43B7A12219 /* [CP] Check Pods Manifest.lock */,
+				A5D13E7F20852C640097C462 /* Sources */,
+				A5D13E8020852C640097C462 /* Frameworks */,
+				A5D13E8120852C640097C462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D13E8520852C640097C462 /* PBXTargetDependency */,
+			);
+			name = GroupTuneUITests;
+			productName = GroupTuneUITests;
+			productReference = A5D13E8320852C640097C462 /* GroupTuneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5D13E5920852C610097C462 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "August Geiermann";
+				TargetAttributes = {
+					A5D13E6020852C610097C462 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					A5D13E7720852C640097C462 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A5D13E6020852C610097C462;
+					};
+					A5D13E8220852C640097C462 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A5D13E6020852C610097C462;
+					};
+				};
+			};
+			buildConfigurationList = A5D13E5C20852C610097C462 /* Build configuration list for PBXProject "GroupTune" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5D13E5820852C610097C462;
+			productRefGroup = A5D13E6220852C610097C462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5D13E6020852C610097C462 /* GroupTune */,
+				A5D13E7720852C640097C462 /* GroupTuneTests */,
+				A5D13E8220852C640097C462 /* GroupTuneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5D13E5F20852C610097C462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B33A85209AA03300A7F421 /* Join Room.storyboard in Resources */,
+				A5B33A83209AA01A00A7F421 /* New Room.storyboard in Resources */,
+				A5B33A77209A9E2100A7F421 /* logo.png in Resources */,
+				A5D13E7220852C640097C462 /* LaunchScreen.storyboard in Resources */,
+				A5B33A7C209A9E2100A7F421 /* Queue.storyboard in Resources */,
+				A5B33A7E209A9E2100A7F421 /* Main.storyboard in Resources */,
+				A5B33A7A209A9E2100A7F421 /* logo_notag.png in Resources */,
+				A5B33A7B209A9E2100A7F421 /* LoggedIn.storyboard in Resources */,
+				A5B33A81209A9FFA00A7F421 /* Search.storyboard in Resources */,
+				A5D13E6F20852C640097C462 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E7620852C640097C462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E8120852C640097C462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7000B3B3E9D1D4BA5CB48A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GroupTune/Pods-GroupTune-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AlamoRecord/AlamoRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Spartan/Spartan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamoRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spartan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GroupTune/Pods-GroupTune-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		791061CE54B3CEF79D4E9C76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupTuneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF891F0CB0799F30EEC730B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupTune-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B8874B6B2A7F43B7A12219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupTuneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5D13E5D20852C610097C462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D13E6720852C610097C462 /* MainViewController.swift in Sources */,
+				A5B33A7D209A9E2100A7F421 /* Queue.swift in Sources */,
+				A5D13EA020852DFF0097C462 /* Test.m in Sources */,
+				A5B33A78209A9E2100A7F421 /* QueueItem.swift in Sources */,
+				A5B33A7F209A9E2100A7F421 /* Song.swift in Sources */,
+				A5D13E6D20852C610097C462 /* GroupTune.xcdatamodeld in Sources */,
+				A5D13E6520852C610097C462 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E7420852C640097C462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D13E7D20852C640097C462 /* GroupTuneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D13E7F20852C640097C462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D13E8820852C640097C462 /* GroupTuneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5D13E7A20852C640097C462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D13E6020852C610097C462 /* GroupTune */;
+			targetProxy = A5D13E7920852C640097C462 /* PBXContainerItemProxy */;
+		};
+		A5D13E8520852C640097C462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D13E6020852C610097C462 /* GroupTune */;
+			targetProxy = A5D13E8420852C640097C462 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5D13E7020852C640097C462 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5D13E7120852C640097C462 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5D13E8A20852C640097C462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5D13E8B20852C640097C462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5D13E8D20852C640097C462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1095F7C2311EE5B358AF4C02 /* Pods-GroupTune.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43U22TAPSX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GroupTune",
+				);
+				INFOPLIST_FILE = GroupTune/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroupTuneTeam.GroupTune;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroupTune-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5D13E8E20852C640097C462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1E486D7470BB8F17B9BADB /* Pods-GroupTune.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43U22TAPSX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GroupTune",
+				);
+				INFOPLIST_FILE = GroupTune/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroupTuneTeam.GroupTune;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroupTune-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5D13E9020852C640097C462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B765AA0BD4C2CBA72AC382B /* Pods-GroupTuneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GroupTuneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GroupTuneTeam.GroupTuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupTune.app/GroupTune";
+			};
+			name = Debug;
+		};
+		A5D13E9120852C640097C462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110C55702C1810F4E3F51317 /* Pods-GroupTuneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GroupTuneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GroupTuneTeam.GroupTuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroupTune.app/GroupTune";
+			};
+			name = Release;
+		};
+		A5D13E9320852C640097C462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1885498CA9D22ABBE7259B96 /* Pods-GroupTuneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GroupTuneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GroupTuneTeam.GroupTuneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GroupTune;
+			};
+			name = Debug;
+		};
+		A5D13E9420852C640097C462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CED88DEB489B3086E7440FF /* Pods-GroupTuneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GroupTuneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GroupTuneTeam.GroupTuneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GroupTune;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5D13E5C20852C610097C462 /* Build configuration list for PBXProject "GroupTune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D13E8A20852C640097C462 /* Debug */,
+				A5D13E8B20852C640097C462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D13E8C20852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D13E8D20852C640097C462 /* Debug */,
+				A5D13E8E20852C640097C462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D13E8F20852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTuneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D13E9020852C640097C462 /* Debug */,
+				A5D13E9120852C640097C462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D13E9220852C640097C462 /* Build configuration list for PBXNativeTarget "GroupTuneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D13E9320852C640097C462 /* Debug */,
+				A5D13E9420852C640097C462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5D13E6B20852C610097C462 /* GroupTune.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5D13E6C20852C610097C462 /* GroupTune.xcdatamodel */,
+			);
+			currentVersion = A5D13E6C20852C610097C462 /* GroupTune.xcdatamodel */;
+			path = GroupTune.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5D13E5920852C610097C462 /* Project object */;
+}

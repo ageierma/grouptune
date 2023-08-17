@@ -1,0 +1,6 @@
+framework module Pods_GroupTune {
+  umbrella header "Pods-GroupTune-umbrella.h"
+
+  export *
+  module * { export * }
+}
